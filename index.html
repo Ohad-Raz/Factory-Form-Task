@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      #myForm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 40vw;
+      }
+      input,
+      button {
+        margin-top: 1.5%;
+      }
+    </style>
+    <div id="container">
+      <form id="myForm" onsubmit="return ohadputfunction()">
+        <input id="userPrivateName" placeholder="Private-Name" type="text" />
+        <input id="userLastName" placeholder="Last-Name" type="text" />
+        <input id="age" placeholder="Your Age" type="date" />
+        <input id="email" placeholder="Email" type="email" />
+        <input id="userPhone" placeholder="Phone-Number" type="number" />
+        <input id="userPosition" placeholder="job-Position" type="text" />
+
+        <button id="btn">submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
